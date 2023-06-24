@@ -8,6 +8,7 @@ import { FooterComponent } from '../components/footer/footer.component';
 import { HbodyComponent } from './components/hbody/hbody.component';
 import {MatIconModule} from '@angular/material/icon';
 import { FeatureimageComponent } from './components/featureimage/featureimage.component';
+import { ArticalComponent } from './components/artical/artical.component';
 
 
 
@@ -18,6 +19,7 @@ import { FeatureimageComponent } from './components/featureimage/featureimage.co
     FooterComponent,
     HbodyComponent,
     FeatureimageComponent,
+    ArticalComponent,
     
   ],
   imports: [
