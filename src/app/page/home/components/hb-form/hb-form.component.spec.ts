@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HbodyComponent } from './hbody.component';
+import { HbFormComponent } from './hb-form.component';
 
-describe('HbodyComponent', () => {
-  let component: HbodyComponent;
-  let fixture: ComponentFixture<HbodyComponent>;
+describe('HbFormComponent', () => {
+  let component: HbFormComponent;
+  let fixture: ComponentFixture<HbFormComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [HbodyComponent]
+      declarations: [HbFormComponent]
     });
-    fixture = TestBed.createComponent(HbodyComponent);
+    fixture = TestBed.createComponent(HbFormComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
