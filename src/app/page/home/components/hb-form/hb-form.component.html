@@ -1,26 +1,33 @@
-<form class="border px-3 py-5 flex flex-col justify-between">
-  <div>
-    <h1 class="mb-3">Booking</h1>
-    <mat-divider class="py-4 "></mat-divider>
-  </div>
-  <mat-form-field appearance="outline" class="text-white">
-    <mat-label>Outline form field</mat-label>
-    <input matInput placeholder="Placeholder" />
-    <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-    <!-- <mat-hint>waring Class</mat-hint> -->
-  </mat-form-field>
-  <mat-form-field appearance="outline">
-    <mat-label>Choose a date</mat-label>
-    <input matInput [matDatepicker]="picker" />
-    <!-- <mat-hint>waring</mat-hint> -->
-    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
-    <mat-datepicker #picker></mat-datepicker>
-  </mat-form-field>
-  <mat-form-field appearance="outline">
-    <mat-label>Select</mat-label>
-    <mat-select>
-      <mat-option value="one">First option</mat-option>
-      <mat-option value="two">Second option</mat-option>
-    </mat-select>
-  </mat-form-field>
-</form>
+<div class="border">
+  <mat-card >
+    <mat-card-content>
+      <form class=" px-3 py-5 flex flex-col justify-between">
+        <div>
+          <h1 class="mb-3 ">Booking</h1>
+          <mat-divider class="py-4 text-yellow-600"></mat-divider>
+        </div>
+        <mat-form-field appearance="outline" class="text-white">
+          <mat-label>Outline form field</mat-label>
+          <input matInput placeholder="Placeholder" />
+          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+          <!-- <mat-hint>waring Class</mat-hint> -->
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Choose a date</mat-label>
+          <input matInput [matDatepicker]="picker" />
+          <!-- <mat-hint>waring</mat-hint> -->
+          <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Select</mat-label>
+          <mat-select>
+            <mat-option value="one">First option</mat-option>
+            <mat-option value="two">Second option</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </form>
+    </mat-card-content>
+  </mat-card>
+  
+</div>

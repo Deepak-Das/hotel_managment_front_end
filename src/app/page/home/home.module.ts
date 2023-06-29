@@ -9,12 +9,18 @@ import {MatIconModule} from '@angular/material/icon';
 import { FeatureimageComponent } from './components/featureimage/featureimage.component';
 import { ArticalComponent } from './components/artical/artical.component';
 import { HbFormComponent } from './components/hb-form/hb-form.component';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatInputModule } from '@angular/material/input';
-import { MatDatepickerModule } from '@angular/material/datepicker';
-import { MatNativeDateModule } from '@angular/material/core';
-import { MatDividerModule } from '@angular/material/divider';
-import {MatSelectModule} from '@angular/material/select';
+import { MaterialModule } from 'src/app/common/material/material.module';
+// import { MatFormFieldModule } from '@angular/material/form-field';
+// import { MatInputModule } from '@angular/material/input';
+// import { MatDatepickerModule } from '@angular/material/datepicker';
+// import { MatNativeDateModule } from '@angular/material/core';
+// import { MatDividerModule } from '@angular/material/divider';
+// import {MatSelectModule} from '@angular/material/select';
+
+import { NgIconsModule } from '@ng-icons/core';
+import { bootstrapFacebook,bootstrapInstagram,bootstrapLinkedin,bootstrapYoutube } from '@ng-icons/bootstrap-icons';
+
+
 
 
 
@@ -33,13 +39,9 @@ import {MatSelectModule} from '@angular/material/select';
   imports: [
     CommonModule,
     HomeRoutingModule,
-    MatIconModule,
-    MatFormFieldModule, 
-    MatInputModule, 
-    MatDatepickerModule,
-    MatNativeDateModule,
-    MatDividerModule,
-    MatSelectModule,
+    MaterialModule,
+    NgIconsModule.withIcons({  bootstrapFacebook,bootstrapInstagram,bootstrapLinkedin,bootstrapYoutube }),    
+    
   ],
 })
 export class HomeModule { }
