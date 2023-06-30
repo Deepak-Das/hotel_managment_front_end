@@ -17,13 +17,14 @@ import { MaterialModule } from 'src/app/common/material/material.module';
 // import {MatSelectModule} from '@angular/material/select';
 
 import { NgIconsModule } from '@ng-icons/core';
-import { bootstrapFacebook,bootstrapInstagram,bootstrapLinkedin,bootstrapYoutube, bootstrapGoogle } from '@ng-icons/bootstrap-icons';
 import { LoginComponent } from './components/login/login.component';
 import { HcontentComponent } from './components/hcontent/hcontent.component';
 import { FeatureimageComponent } from './components/hcontent/components/featureimage/featureimage.component';
 import { ArticalComponent } from './components/hcontent/components/artical/artical.component';
 import { RegisterComponent } from './components/register/register.component';
+import { RoomcardComponent } from './components/roomcard/roomcard.component';
 
+import { bootstrapFacebook,bootstrapInstagram,bootstrapLinkedin,bootstrapYoutube, bootstrapGoogle,bootstrapImages } from '@ng-icons/bootstrap-icons';
 
 
 
@@ -41,13 +42,14 @@ import { RegisterComponent } from './components/register/register.component';
     LoginComponent,
     HcontentComponent,
     RegisterComponent,
+    RoomcardComponent,
     
   ],
   imports: [
     CommonModule,
     HomeRoutingModule,
     MaterialModule,
-    NgIconsModule.withIcons({  bootstrapFacebook,bootstrapInstagram,bootstrapLinkedin,bootstrapYoutube, bootstrapGoogle }),    
+    NgIconsModule.withIcons({  bootstrapFacebook,bootstrapInstagram,bootstrapLinkedin,bootstrapYoutube, bootstrapGoogle,bootstrapImages }),    
     
   ],
 })
